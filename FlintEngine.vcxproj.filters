@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b92768de-111e-44d1-bfcd-f7aab4d6373f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application">
+      <UniqueIdentifier>{d0392537-d806-4c86-8c50-15e33eaed991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Domain">
+      <UniqueIdentifier>{a54db4db-0cbb-4696-89d2-84656e431239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Infrastructure">
+      <UniqueIdentifier>{9a32ec0c-d99b-468b-842b-a28bea69fcd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Presentation">
+      <UniqueIdentifier>{cfd94553-2fcc-4e3a-905c-e3bdd5bf7767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Domain\Collectons">
+      <UniqueIdentifier>{922ffff7-c85a-447b-8fe6-7e60449e6674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Domain\UTF8">
+      <UniqueIdentifier>{86da7af4-41dd-495e-ab7e-872d655e6f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Domain\UTF16">
+      <UniqueIdentifier>{17ba6fb6-0575-4a69-9cb4-2205430375cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Domain\Math">
+      <UniqueIdentifier>{93c97983-7655-43fd-92e4-9fbe2d419e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Infrastructure\VM">
+      <UniqueIdentifier>{38686f14-40d7-4541-b73e-1f2401f5efce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Infrastructure\IO">
+      <UniqueIdentifier>{0386ff4d-a18b-474f-8054-b4c94af74f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Infrastructure\Allocator">
+      <UniqueIdentifier>{0d76c571-bdda-47ec-9644-0edbb65c32b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Domain\UTF8\UTF8StringBuilder.cpp">
+      <Filter>src\Domain\UTF8</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Infrastructure\VM\Stack.cpp">
+      <Filter>src\Infrastructure\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Infrastructure\VM\VM.cpp">
+      <Filter>src\Infrastructure\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Infrastructure\VM\VMCompiler.cpp">
+      <Filter>src\Infrastructure\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\UTF16\UTF16.cpp">
+      <Filter>src\Domain\UTF16</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Presentation\Entry.cpp">
+      <Filter>src\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Presentation\CUI.cpp">
+      <Filter>src\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Presentation\GUI.cpp">
+      <Filter>src\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\UTF8\UTF8Char.cpp">
+      <Filter>src\Domain\UTF8</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\UTF8\UTF8String.cpp">
+      <Filter>src\Domain\UTF8</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Presentation\Window.cpp">
+      <Filter>src\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\Collections\List.hpp">
+      <Filter>src\Domain\Collectons</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\Collections\Query.cpp">
+      <Filter>src\Domain\Collectons</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\Math\Vector2.cpp">
+      <Filter>src\Domain\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\Math\Vector3.cpp">
+      <Filter>src\Domain\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\Math\Vector4.cpp">
+      <Filter>src\Domain\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Domain\UTF8\UTF8Memory.cpp">
+      <Filter>src\Domain\UTF8</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Infrastructure\IO\Timer.cpp">
+      <Filter>src\Infrastructure\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Infrastructure\Allocator\OSAllocator.cpp">
+      <Filter>src\Infrastructure\Allocator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Domain\UTF8\UTF8.h">
+      <Filter>src\Domain\UTF8</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infrastructure\VM\VM.h">
+      <Filter>src\Infrastructure\VM</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infrastructure\VM\VMCompiler.h">
+      <Filter>src\Infrastructure\VM</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Domain\UTF16\UTF16.h">
+      <Filter>src\Domain\UTF16</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Presentation\CUI.h">
+      <Filter>src\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Presentation\GUI.h">
+      <Filter>src\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Domain\Type.h">
+      <Filter>src\Domain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Domain\Collections.h">
+      <Filter>src\Domain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Domain\Collections\Array.hpp">
+      <Filter>src\Domain\Collectons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Domain\Math\Vector2.h">
+      <Filter>src\Domain\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Domain\Math\Vector3.h">
+      <Filter>src\Domain\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Domain\Math\Vector4.h">
+      <Filter>src\Domain\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infrastructure\IO\Timer.h">
+      <Filter>src\Infrastructure\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infrastructure\Allocator\OSAllocator.h">
+      <Filter>src\Infrastructure\Allocator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="debug.natvis" />
+  </ItemGroup>
+</Project>

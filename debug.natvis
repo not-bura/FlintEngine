@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <Type Name="FlintEngine::UTF8Memory">
+    <DisplayString>{m_pointer,[m_length]s8}</DisplayString>
+    <Expand>
+      <Item Name="m_length">m_length</Item>
+      <Item Name="m_pointer">m_pointer,[m_length]s8</Item>
+    </Expand>
+  </Type>
+
+  <Type Name="FlintEngine::UTF8String">
+    <DisplayString>{m_pointer,[m_length]s8}</DisplayString>
+    <Expand>
+      <Item Name="m_length">m_length</Item>
+      <Item Name="m_pointer">m_pointer,[m_length]s8</Item>
+    </Expand>
+  </Type>
+
+  <Type Name="FlintEngine::Array&lt;*&gt;">
+    <DisplayString>{m_pointer,[m_length]na}</DisplayString>
+    <Expand>
+      <Item Name="m_length">m_length</Item>
+      <ArrayItems>
+        <Size>m_length</Size>
+        <ValuePointer>m_pointer</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+
+  <Type Name="FlintEngine::List&lt;*&gt;">
+    <DisplayString>{m_pointer,[m_count]na}</DisplayString>
+    <Expand>
+      <Item Name="m_count">m_count</Item>
+      <Item Name="m_capacity">m_capacity</Item>
+      <ArrayItems>
+        <Size>m_count</Size>
+        <ValuePointer>m_pointer</ValuePointer>
+      </ArrayItems>
+      <Synthetic Name="[unused]" Condition="m_capacity &gt; m_count">
+        <Expand>
+          <CustomListItems>
+            <Variable Name="i" InitialValue="m_count" />
+            <Loop>
+              <Break Condition="i &gt;= m_capacity" />
+              <Item Name="[{i}]">m_pointer[i]</Item>
+              <Exec>i++</Exec>
+            </Loop>
+          </CustomListItems>
+        </Expand>
+      </Synthetic>
+    </Expand>
+  </Type>
+
+</AutoVisualizer>

@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="FlintEngine.vcxproj" Id="eeb104a8-b344-43d1-91da-032e4ab7ebdb" />
+</Solution>
