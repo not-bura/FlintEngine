@@ -96,6 +96,7 @@
     <ClCompile Include="src\Infrastructure\Allocator\OSAllocator.cpp">
       <Filter>src\Infrastructure\Allocator</Filter>
     </ClCompile>
+    <ClCompile Include="src\Infrastructure\GL\Vulkan\GL.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Domain\UTF8\UTF8.h">
@@ -140,6 +141,7 @@
     <ClInclude Include="src\Infrastructure\Allocator\OSAllocator.h">
       <Filter>src\Infrastructure\Allocator</Filter>
     </ClInclude>
+    <ClInclude Include="src\Infrastructure\GL\GL.h" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="debug.natvis" />
