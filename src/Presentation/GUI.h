@@ -21,8 +21,6 @@ namespace FlintEngine
 
 	class Window
 	{
-		friend GUI;
-
 	private:
 		HWND m_handle;
 
